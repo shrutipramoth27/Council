@@ -1,0 +1,431 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Events - KJSCE Student Council</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2e2",
+                    "on-tertiary-container": "#b5b3b2",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "outline": "#8c716d",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-background": "#1b1c1c",
+                    "tertiary": "#2f2f2f",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "on-secondary": "#ffffff",
+                    "primary": "#660006",
+                    "surface-bright": "#fbf9f8",
+                    "on-surface-variant": "#59413e",
+                    "on-primary-container": "#ff968c",
+                    "secondary-fixed": "#e5e2df",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e4e2e2",
+                    "surface": "#fbf9f8",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-container": "#efeded",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#8a1515",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-primary-fixed": "#410002",
+                    "secondary-container": "#e2dfdc",
+                    "secondary": "#5f5e5c",
+                    "surface-tint": "#ae302b",
+                    "on-primary-fixed-variant": "#8c1716",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb4ab",
+                    "inverse-on-surface": "#f2f0f0",
+                    "surface-dim": "#dbdad9",
+                    "on-secondary-fixed-variant": "#474745",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#303031",
+                    "surface-container-low": "#f5f3f3",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary-fixed": "#1c1c1a",
+                    "outline-variant": "#e0bfbb",
+                    "on-secondary-container": "#636260",
+                    "surface-container-high": "#e9e8e7",
+                    "primary-fixed": "#ffdad6",
+                    "tertiary-fixed": "#e5e2e1",
+                    "tertiary-container": "#464545",
+                    "background": "#fbf9f8",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "stack-lg": "64px",
+                    "stack-sm": "16px",
+                    "stack-md": "32px",
+                    "container-max": "1200px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Work Sans"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "headline-md": ["Work Sans"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "body-md": ["Work Sans"],
+                    "label-md": ["Work Sans"],
+                    "body-lg": ["Work Sans"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .event-card-hover:hover .event-image {
+            transform: scale(1.05);
+        }
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .premium-border-top {
+            border-top: 4px solid #660006;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-surface border-b border-outline-variant dark:border-outline sticky top-0 z-50"><div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto"><div class="flex items-center gap-4"><button aria-expanded="false" aria-label="Toggle menu" class="text-primary cursor-pointer lg:hidden" id="menu-toggle"><span class="material-symbols-outlined">menu</span></button><a class="flex items-center gap-3" href="index.html"><img alt="Somaiya Trust" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl_II3xfSLrGCXYJYrRiPIIv4Tzy5ynEcilqHGxD6hyH3dwgfhsN2iUdWIQMrIEtvk61Q-_h2UxKTZtqwaxWzYLi_nAiQSqtFs03cD6mjCmxEvY_xSGNxBpYtR2ZD9WcL7RFRvOg4iiGmmMDpETtH_pCPD8c4pBaMOoH94QtFgMf9LS8g_tcNogr5Ah9zN8zLG2Nf69b4zfO1cwKzd8fN9SZFwG2k1dw7wqKXjNJDaazUHUVavl-RLGL9lREzwFDp05Q"><img alt="Somaiya Vidyavihar University" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuSqAwdXnuZHOCc3tdJcCswwFiTAn_anJXFNxt6Cqs8w1c3uQPL88x_fTI-yvZ_0NSVKJ5-IV3Gdl50df6nNtTzHTbecYTMddTIXi3gVkz8HBMpLZEOCw-P69FF6u_H-VXGmy9w6vZhFq45OJwJi9hGR-M9xk8r_JCPUqZrkpH3QC4yvwQJr1Q8HHUJPd8Yb5_oth75ecRnXXNdmRAmsaIEmWJtiFu3rP0pnqDVT_mSd39fdDXCIyhOVkL4qGUoRsWMA"><img alt="KJSSE Council" class="h-10 md:h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEu-qdq0GclOP-lhhM6uycoe7DJpCyFUoMPwmXJndKicfnQ9MNviPwGPSkxsJkzTeklI1JEYRa0beVTY1xE7AfKghETij65vhuWyUK1N_9DbU14JSSV8Mk9p9BGHE6yNGXECGxh8aizhlLaoCNN2Lp7b1wKBj5OvHU00duHEy1CbtUkgBqzT76c9gSkLv0_QjzLTvxiO5gqaouTWb2vZ9q6b7U5u-oQNBBczl1LTemghoh4Mp3vNv1aGdfujNCONqr2Q"></a></div><nav class="hidden lg:flex items-center gap-base"><a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors px-4 py-2" href="index.html">Home</a><a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 px-4 py-2 font-bold" href="events.html">Events</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors px-4 py-2" href="team.html">Our Team</a><a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors px-4 py-2" href="about.html">About Us</a></nav><div class="flex items-center gap-4"><span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hidden sm:inline-block">account_circle</span></div></div>
+</header>
+<!-- Side Drawer (Mobile) -->
+<div class="fixed inset-0 bg-black/50 z-[60] hidden transition-opacity duration-300 opacity-0" id="drawer">
+<div class="bg-surface-bright dark:bg-surface-dim rounded-r-xl h-full w-72 flex flex-col gap-base py-stack-md transform -translate-x-full transition-transform duration-300 ease-out" id="drawer-content">
+<div class="px-6 pb-4 flex justify-between items-center border-b border-outline-variant">
+<span class="font-headline-md text-headline-md text-primary font-bold">KJSSE Menu</span>
+<span class="material-symbols-outlined cursor-pointer" id="close-drawer">close</span>
+</div>
+<div class="flex flex-col pt-4">
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 flex items-center gap-3" href="index.html">
+<span class="material-symbols-outlined">home</span> Home
+                </a>
+<a class="bg-primary-container text-on-primary-container font-bold rounded-full mx-2 px-4 py-3 flex items-center gap-3" href="events.html">
+<span class="material-symbols-outlined">calendar_month</span> Events
+                </a>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 flex items-center gap-3" href="team.html">
+<span class="material-symbols-outlined">groups</span> Our Team
+                </a>
+<a class="text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 flex items-center gap-3" href="about.html">
+<span class="material-symbols-outlined">info</span> About Us
+                </a>
+</div>
+</div>
+</div>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Header Section -->
+<section class="mb-stack-lg text-center md:text-left">
+<h2 class="font-display-lg text-display-lg text-primary mb-2">OUR FLAGSHIP EVENTS</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto md:mx-0"></div>
+<p class="mt-4 font-body-lg text-body-lg text-secondary max-w-2xl">Experience the pinnacle of campus life at K. J. Somaiya School of Engineering. From technical innovations to cultural celebrations and athletic excellence.</p>
+</section>
+<!-- Flagship Events Bento-ish Section -->
+<section class="flex flex-col gap-gutter">
+<!-- Abhiyantriki -->
+<a class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest transition-all duration-300 hover:shadow-xl premium-border-top" href="#" style="border-top-color: #008080;">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+<div class="p-stack-md flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-3 py-1 bg-[#008080]/10 text-[#008080] font-label-md rounded-full">Technical Fest</span>
+<span class="material-symbols-outlined text-[#008080]" style="font-variation-settings: 'FILL' 1;">memory</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-background mb-4 group-hover:text-[#008080] transition-colors">ABHIYANTRIKI</h3>
+<p class="font-body-md text-secondary mb-8">One of the largest technical festivals in Maharashtra, showcasing robotics, hackathons, and industrial exhibits that push the boundaries of engineering innovation.</p>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-[#008080] text-white rounded-lg font-label-md hover:brightness-110 transition-all flex items-center gap-2">
+                                VISIT PORTAL <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+<span class="text-secondary font-label-sm">October 2024</span>
+</div>
+</div>
+<div class="relative overflow-hidden h-64 md:h-full order-first md:order-last">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest to-transparent z-10 hidden md:block"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent z-10 md:hidden"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A futuristic technical festival scene with glowing blue neon light circuits, robotic arms being demonstrated to a crowd of engaged engineering students, and sleek corporate exhibition booths. The atmosphere is high-tech, precise, and professional, dominated by deep teal and electric blue accents in a bright college campus setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDidIpQuPwVwdAJWcSBFDNKKJgVaFW9u00y3hOqA-f7lN74jVhjZV7GzCqEkB8Vi8MZPDbGH10uTdFH3DPU1m4cxpxl2e6_OSmz30QapJe2Lajji7QCPY65BCWfZTpdG6HUtEqm0Ho4yQvpmRpYu6pKpjYJPpbYZFaxjtt1SyD6xTMmv8JSDIdCoPJM9daBvzXd3eZzAAg4U9foW2W4Q0SP3YrO2tIFzNBkLYm-nrNAMubgF0tS6-_qzbxwlj06haDoSMjEqT0JhOw">
+</div>
+</div>
+</a>
+<!-- Symphony -->
+<a class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest transition-all duration-300 hover:shadow-xl premium-border-top" href="#" style="border-top-color: #FF8C00;">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+<div class="relative overflow-hidden h-64 md:h-full">
+<div class="absolute inset-0 bg-gradient-to-l from-surface-container-lowest to-transparent z-10 hidden md:block"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent z-10 md:hidden"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A vibrant cultural festival stage at sunset with warm gold and orange stage lighting reflecting off traditional art installations. Students are seen in artistic performances, with colorful banners and bokeh lights in the background creating an atmosphere of creative energy and academic heritage. Minimalist professional photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX5c2-7LOJ_ZlisM2rvA7cGugmep1oWukg1HCWxv5xhCQxR46E5FzdUnTKVV25pkrdBZV0RW4pn83CVd2NotbIv_GdSC7pDaarcIz9JywxK00jfJxppsYP6mfrqjKFMy1N1W-tBZuMScoUeO30SXJcmm0Px5xh9FLQsvAZS_ejNzFnA7_NMKknnMrj8f-MQDB4_lnvLk11MFWtbeOmlj3i-Va6rpAFDCFWiK2LbIXPlYAaFk1LMViHq3KSJ9z60o8P4L-sTpEQKJw">
+</div>
+<div class="p-stack-md flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-3 py-1 bg-[#FF8C00]/10 text-[#FF8C00] font-label-md rounded-full">Cultural Fest</span>
+<span class="material-symbols-outlined text-[#FF8C00]" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-background mb-4 group-hover:text-[#FF8C00] transition-colors">SYMPHONY</h3>
+<p class="font-body-md text-secondary mb-8">A celebration of art, music, and dance where creativity takes center stage. Symphony brings together talent from across the city for a grand cultural extravaganza.</p>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-[#FF8C00] text-white rounded-lg font-label-md hover:brightness-110 transition-all flex items-center gap-2">
+                                LEARN MORE <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="text-secondary font-label-sm">January 2025</span>
+</div>
+</div>
+</div>
+</a>
+<!-- Skream -->
+<a class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest transition-all duration-300 hover:shadow-xl premium-border-top" href="#" style="border-top-color: #8A1515;">
+<div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+<div class="p-stack-md flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-3 py-1 bg-primary/10 text-primary font-label-md rounded-full">Sports Fest</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-background mb-4 group-hover:text-primary transition-colors">SKREAM</h3>
+<p class="font-body-md text-secondary mb-8">A national-level inter-collegiate sports festival featuring fierce competition, incredible teamwork, and an electric atmosphere on the KJSSE fields.</p>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-primary text-white rounded-lg font-label-md hover:brightness-110 transition-all flex items-center gap-2">
+                                REGISTER NOW <span class="material-symbols-outlined text-[18px]">app_registration</span>
+</button>
+<span class="text-secondary font-label-sm">February 2025</span>
+</div>
+</div>
+<div class="relative overflow-hidden h-64 md:h-full order-first md:order-last">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest to-transparent z-10 hidden md:block"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent z-10 md:hidden"></div>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-action sports photography of a collegiate football match at dusk. The scene captures an energetic athlete in motion on a pristine green field, with bold maroon and white team colors visible. Cinematic lighting from stadium floodlights creates sharp shadows and intense contrast, reflecting a professional and prestigious sports event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBUNntlbQQOcNCMk2iXsi_39qVZSuuYHumD1wfuF9ypCI7-M9AnZQUxljLyk2DZf8Q_NmdwdQTfpzORkVH6CeICUU78Yg0BMSWSx-7N4s1DatB6JAWyUoIiX2YVbetJnJoo-HLzVtBSzSmmh3isz8j0lTEqDSBwhXdomquQsulTqE03Df5EY2sQXw9SSUNZVQKz8a9vpIXymjpNeIVKRq_dydgW8OYfJwRwHX66p_Zzi9D8w5LbdMqtiRnbmh9zO32ykzRMLNGeik">
+</div>
+</div>
+</a>
+</section>
+<!-- Parvaah Section -->
+<section class="mt-stack-lg p-stack-md rounded-xl bg-surface-container-low border border-[#2E7D32]/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-[#2E7D32]/5 rounded-full -mr-32 -mt-32"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-stack-md">
+<div class="w-full md:w-1/3">
+<img class="rounded-lg shadow-md w-full h-64 object-cover" data-alt="A tranquil and professional nature photography shot of a lush community garden inside a modern campus. Students are seen planting saplings in a sustainable environment. The lighting is soft and earthy, emphasizing vibrant natural greens and warm sunlight. Minimalist corporate visual style focused on ecological sustainability and social responsibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTRyd_PuGITPgHK6ASB1roXAWuun2m_Sf2ZofZB-hLiSSMEuGsCyZtISgPjvI6p7dADkS1qt-QZFML-AijrqTuLT0CgOpRLxps6F7FBmQX7s0BxfqKPOvXrcOuE_UHwipdxvV7LCPZzoTqc4-qmFIxapFnmRa8FBPwcti-loNqgwPVS2yy3_yW5Zr6wvJca4SCMMMAwmcjkAs3q0WfEB7wjA0KfWOxj3_maqurkg4zCbYFn8HXIyZ0TNM5tWjktNATNvJdxXk0lR4">
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-[#2E7D32]">eco</span>
+<span class="font-label-md text-[#2E7D32] tracking-widest uppercase">Sustainability Initiative</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-[#1B5E20] mb-4">PARVAAH</h3>
+<p class="font-body-lg text-secondary mb-6 italic">"Taking care for a better tomorrow."</p>
+<p class="font-body-md text-on-surface-variant mb-6">Parvaah is the social and environment-friendly wing of the KJSSE Students' Council. We host beach clean-ups, plantation drives, and awareness workshops, ensuring our campus growth remains sustainable and responsible.</p>
+<button class="border border-[#2E7D32] text-[#2E7D32] px-8 py-3 rounded hover:bg-[#2E7D32] hover:text-white transition-all font-label-md">JOIN THE CAUSE</button>
+</div>
+</div>
+</section>
+<!-- Other Events Slider Section -->
+<section class="mt-stack-lg">
+<h4 class="font-headline-md text-headline-md text-primary mb-stack-sm flex items-center gap-3">
+<span class="w-8 h-px bg-primary/30"></span> OTHER EVENTS <span class="w-8 h-px bg-primary/30"></span>
+</h4>
+<div class="relative overflow-hidden group">
+<div class="carousel-track flex gap-gutter py-4" id="other-events-track">
+<!-- Naari -->
+<div class="min-w-[300px] bg-white border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors flex-shrink-0">
+<div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-pink-600">female</span>
+</div>
+<h5 class="font-headline-md text-on-background mb-2">Naari</h5>
+<p class="text-secondary text-body-md">Empowering women through workshops, speaker sessions, and safety awareness drives.</p>
+</div>
+<!-- Freshers -->
+<div class="min-w-[300px] bg-white border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors flex-shrink-0">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-blue-600">celebration</span>
+</div>
+<h5 class="font-headline-md text-on-background mb-2">Freshers</h5>
+<p class="text-secondary text-body-md">Welcoming our newest members with a grand night of performances and networking.</p>
+</div>
+<!-- Farewell -->
+<div class="min-w-[300px] bg-white border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors flex-shrink-0">
+<div class="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-purple-600">moving</span>
+</div>
+<h5 class="font-headline-md text-on-background mb-2">Farewell</h5>
+<p class="text-secondary text-body-md">Celebrating the journey of our graduating batch with nostalgia and honors.</p>
+</div>
+<!-- Tech-Expo -->
+<div class="min-w-[300px] bg-white border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors flex-shrink-0">
+<div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-amber-600">smart_toy</span>
+</div>
+<h5 class="font-headline-md text-on-background mb-2">Tech Expo</h5>
+<p class="text-secondary text-body-md">Internal project showcase featuring innovative solutions by junior students.</p>
+</div>
+<!-- Drama -->
+<div class="min-w-[300px] bg-white border border-outline-variant p-6 rounded-lg hover:border-primary transition-colors flex-shrink-0">
+<div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-red-600">theater_comedy</span>
+</div>
+<h5 class="font-headline-md text-on-background mb-2">Nukkad Natak</h5>
+<p class="text-secondary text-body-md">Social awareness through powerful street plays across campus venues.</p>
+</div>
+</div>
+<!-- Controls -->
+<button class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/90 shadow-md p-2 rounded-full hidden group-hover:block transition-all z-20 border border-outline-variant" id="prev-slide">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/90 shadow-md p-2 rounded-full hidden group-hover:block transition-all z-20 border border-outline-variant" id="next-slide">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-fixed dark:bg-tertiary-container border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h3 class="font-headline-md text-headline-md text-on-secondary-fixed font-bold mb-4">KJSSE Council</h3>
+<p class="font-body-md text-on-secondary-fixed opacity-80">Empowering student life since 1983.</p>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary-fixed mb-4 font-bold">Quick Links</h4>
+<ul class="flex flex-col gap-2 font-body-md text-on-secondary-fixed">
+<li><a class="hover:underline decoration-primary transition-all duration-200" href="events.html">Events Calendar</a></li>
+<li><a class="hover:underline decoration-primary transition-all duration-200" href="team.html">The Council Team</a></li>
+<li><a class="hover:underline decoration-primary transition-all duration-200" href="#">Grievance Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary-fixed mb-4 font-bold">Connect</h4>
+<ul class="flex flex-col gap-2 font-body-md text-on-secondary-fixed">
+<li><a class="hover:underline decoration-primary transition-all duration-200" href="#">Official Website</a></li>
+<li><a class="hover:underline decoration-primary transition-all duration-200" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-on-secondary-fixed mb-4 font-bold">Location</h4>
+<p class="font-body-md text-on-secondary-fixed opacity-80">Vidyavihar, Mumbai, Maharashtra 400077</p>
+<div class="mt-4 flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">face_nod</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">photo_camera</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 text-center">
+<p class="font-body-md text-on-secondary-fixed opacity-60">© 2024 KJSSE Students' Council. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Drawer Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeDrawer = document.getElementById('close-drawer');
+        const drawer = document.getElementById('drawer');
+        const drawerContent = document.getElementById('drawer-content');
+
+        menuToggle.addEventListener('click', () => {
+            drawer.classList.remove('hidden');
+            setTimeout(() => {
+                drawer.classList.add('opacity-100');
+                drawerContent.classList.remove('-translate-x-full');
+            }, 10);
+        });
+
+        const hideDrawer = () => {
+            drawer.classList.remove('opacity-100');
+            drawerContent.classList.add('-translate-x-full');
+            setTimeout(() => {
+                drawer.classList.add('hidden');
+            }, 300);
+        };
+
+        closeDrawer.addEventListener('click', hideDrawer);
+        drawer.addEventListener('click', (e) => {
+            if (e.target === drawer) hideDrawer();
+        });
+
+        // Carousel Logic
+        const track = document.getElementById('other-events-track');
+        const nextBtn = document.getElementById('next-slide');
+        const prevBtn = document.getElementById('prev-slide');
+        let currentPos = 0;
+
+        const updateCarousel = () => {
+            const cardWidth = track.children[0].offsetWidth + 24; // Width + gutter
+            const maxScroll = track.scrollWidth - track.offsetWidth;
+            
+            if (currentPos > maxScroll) currentPos = 0;
+            if (currentPos < 0) currentPos = maxScroll;
+            
+            track.style.transform = `translateX(-${currentPos}px)`;
+        };
+
+        nextBtn.addEventListener('click', () => {
+            currentPos += 324;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentPos -= 324;
+            updateCarousel();
+        });
+
+        // Auto-slide
+        let autoSlide = setInterval(() => {
+            currentPos += 324;
+            updateCarousel();
+        }, 4000);
+
+        track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        track.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => {
+                currentPos += 324;
+                updateCarousel();
+            }, 4000);
+        });
+
+        // Hover Micro-interactions
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mousedown', () => {
+                link.classList.add('scale-95', 'duration-150');
+            });
+            link.addEventListener('mouseup', () => {
+                link.classList.remove('scale-95');
+            });
+        });
+    </script>
+<script src="js/main.js"></script>
+</body></html>

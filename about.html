@@ -1,0 +1,397 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | KJSSE Student Council</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(138, 21, 21, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-primary-fixed": "#410002",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#ffb4ab",
+                        "surface-container-low": "#f5f3f3",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ffb4ab",
+                        "primary-container": "#8a1515",
+                        "outline-variant": "#e0bfbb",
+                        "surface-container-highest": "#e4e2e2",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#e2dfdc",
+                        "on-error-container": "#93000a",
+                        "primary": "#660006",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary-container": "#636260",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dbdad9",
+                        "outline": "#8c716d",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-primary-container": "#ff968c",
+                        "on-secondary-fixed-variant": "#474745",
+                        "surface-tint": "#ae302b",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "surface-bright": "#fbf9f8",
+                        "surface": "#fbf9f8",
+                        "tertiary-container": "#464545",
+                        "on-primary-fixed-variant": "#8c1716",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed": "#e5e2df",
+                        "secondary": "#5f5e5c",
+                        "on-tertiary-container": "#b5b3b2",
+                        "primary-fixed": "#ffdad6",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#59413e",
+                        "tertiary": "#2f2f2f",
+                        "background": "#fbf9f8",
+                        "on-secondary-fixed": "#1c1c1a",
+                        "surface-container": "#efeded",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c3",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#303031",
+                        "surface-variant": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "container-max": "1200px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "64px",
+                        "gutter": "24px",
+                        "stack-sm": "16px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Top Navigation -->
+<header class="bg-surface-container-lowest dark:bg-surface border-b border-outline-variant dark:border-outline fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-primary" id="menu-toggle">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<a class="flex items-center gap-3" href="index.html">
+<img alt="KJSSE Logo" class="h-10 w-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGzpUcmETG-GeNLtn_NBNsUa5yOECyrV824EuQW7Wqi5iO7a-OYNYSzKA7yV8bn98Td6pnVNvGUJgd1X04eN2WPUgJSC21Ncz70qN_wVl1Bq7KcDxum1tceJJ55Q-pf4Xc0IEWCKtLGQnxSkjbRs23XLTM5q5Hwidl38HoNOWKrkA0m8lMKXZftOW48KQskFHVWpvg3amuvYFrqtfRVRbWJc02wilq6B2Xp_2Rxw50gsbqpIc6wdDSOIEzZJvZjvy16w">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim tracking-tight">KJSSE Student Council</span>
+</a>
+</div>
+<nav class="hidden md:flex gap-base">
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors font-label-md text-label-md" href="events.html">Events</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-medium hover:text-primary transition-colors font-label-md text-label-md" href="team.html">Our Team</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-label-md text-label-md" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary hidden sm:inline-block">account_circle</span>
+</div>
+</div>
+<nav class="hidden md:hidden border-t border-outline-variant bg-surface-container-lowest px-margin-mobile py-2" id="mobile-menu">
+<a class="block font-label-md text-label-md text-secondary py-3 border-b border-outline-variant/50" href="index.html">Home</a>
+<a class="block font-label-md text-label-md text-secondary py-3 border-b border-outline-variant/50" href="events.html">Events</a>
+<a class="block font-label-md text-label-md text-secondary py-3 border-b border-outline-variant/50" href="team.html">Our Team</a>
+<a class="block font-label-md text-label-md text-primary py-3" href="about.html">About Us</a>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Brand Header Section -->
+<section class="hero-gradient px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="max-w-container-max mx-auto flex flex-col items-center text-center">
+<div class="flex flex-wrap justify-center items-center gap-8 mb-stack-md opacity-90">
+<img alt="Somaiya Trust" class="h-16 md:h-20 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBez_v9BAqxdQiRykxozRfjcQnmO9hlgRMH3n3t9bYkC8XAUYe5vDLhzRdNBp4ak1Ex6kXPW699F0bHZAf1Tuia36lDjFRKTs221fMB1X8ql20MoxYmOw5CSCQT2k3NI1aVno12NwO5JgmKMfYimHbXBOOXEBqLDApNbp8jaZXhy1q0syir0GUV3_VReZIjo9gnTtUoVGmyN-XxrXf7WGiA4Mt2u_GbJgbmTHSJ7jmewEPUr0NX3e3hPv6RCMuXpv3FPw">
+<img alt="KJSSE College Engineering" class="h-12 md:h-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJVzgyRgvxnB2NlGpYokrxeDsVWHY8Wnrb5wpEObhJKEbnyEOJPvaEsu3xjjMEFm-GIauIobrg3T2WhhCA5c4SIISD510c0eQ3m-jZRbvqSZ0y6Wyn1YvBlPFHn3DlYFJsNgx-AkyQennVSsWPy65VmrRY2LJBakFnV4ljHkA02f01OJuwHB5QviqJeTQOgR3gPEzob77BQ6h6kIH0RIpZVDaqr59AxZjmBWTtIqi0xGoRDKNibtco4nt7_dkUTGT4Hw">
+<img alt="KJSSE Logo" class="h-16 md:h-20 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGBYjebK_Pgn0Q_8QSm49Doz2NybKAtaH7oERjuWKNmpPedPZ7nJ0mRTvAVZot9Uhk0NLzdnkf-lu0eDA3XO-QkqlWABP8nqZJji_c_xi3X_Q-HwDXsk4BWSBwyBFkHWuYZWNETCVUE33yVZLRh9neTHbwevNowIr7cH1rhAC4Gl6kjfkpr-c6_DT1sMNUrkP0Z4l5eFZhkMdgRSZzYFct2HSP833o5hVhWaCebBC8sLKbIruDcdyKgz5VD8zwYbxlOg">
+</div>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Upholding Academic Excellence &amp; Leadership</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl mx-auto">The KJSSE Student Council serves as the primary liaison between students and administration, fostering a vibrant ecosystem of innovation, culture, and sports.</p>
+</div>
+</section>
+<!-- Messages from Leadership -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg bg-white">
+<div class="max-w-container-max mx-auto space-y-24">
+<!-- Director's Message -->
+<div class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="w-full md:w-5/12 aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant relative">
+<img class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700" data-alt="A professional portrait of a distinguished university director in a formal dark suit, standing in a sunlit wood-paneled academic library. The lighting is soft and authoritative, reflecting a scholarly atmosphere with books in the background. The aesthetic is clean and corporate, utilizing the KJSSE primary maroon in subtle desk accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA56yJrB3plSytRUwq2tbhCGCdTXpHgC8noG1cjHdw64kUmp56oKqzyIB5t_iglEb58wn33Kr2rjVRwTJMvS5ZMm8sgJJOVJm3NCg6anDXMapSuUC9WMV_ydpcXKazsBiCqoOa46p41EQuBhNXW9-dh24EtXqC-2Dzy2zoEne88u3FrJbsEjjaCMtyP5Y5IO3kPJJ3dvxLYFTBaHCZ6gI30pzxj2wLiSKngCZ8pSku4wRyT5eCufzHS">
+<div class="absolute bottom-0 left-0 right-0 bg-primary/90 p-4 text-white">
+<p class="font-headline-md text-headline-md">Dr. Suresh K. Ukrande</p>
+<p class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Director, KJSSE</p>
+</div>
+</div>
+<div class="w-full md:w-7/12">
+<span class="text-primary font-bold tracking-widest uppercase text-label-sm mb-4 block">Leadership Perspective</span>
+<h2 class="font-headline-lg text-headline-lg mb-6">Coming from the Director</h2>
+<div class="space-y-4 font-body-lg text-body-lg text-secondary leading-relaxed">
+<p>“At KJSSE, we believe that education extends beyond the four walls of a classroom. Our Student Council is the catalyst for this holistic development, turning young engineers into compassionate leaders.”</p>
+<p>Our commitment remains steadfast in providing a platform where innovation meets tradition. The Council's role in organizing world-class technical and cultural fests is a testament to the organizational brilliance and spirit of our student body.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant">
+<button class="bg-primary-container text-white px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-primary transition-all active:scale-95">Read Full Statement</button>
+</div>
+</div>
+</div>
+<!-- Dean's Message -->
+<div class="flex flex-col md:flex-row-reverse gap-stack-lg items-center">
+<div class="w-full md:w-5/12 aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant relative">
+<img class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700" data-alt="A formal and approachable professional portrait of Dr. Sudha Gupta, a female Dean in a professional blazer, seated in a contemporary academic office. Large windows behind her show a blurred university campus with green trees. The scene is bright and scholarly, maintaining a minimalist light-mode aesthetic with warm maroon color accents in the decor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBARpMD-IebXIqXAUEKJgAo_EpMniboaE4i6E5hViJmMNUKHsgxSv_e9NBYH00j4sMR-FEU_VepwkQVYJOPSSbc2ylddEbb3ut11UQO9iY-5yH14u3BiAimV7SIwKc9zpnsnoMt_qI4C01Uyb22XqBAkOZVEA0BWywvVHoBexZv1KlE4QrLhs2JBBi1nqZYQ5mqCxe4CzGfPO6vOLwG_1U3CFIiwkZD_82cXXlFU1xGJvwGWY_HKwQD">
+<div class="absolute bottom-0 left-0 right-0 bg-primary/90 p-4 text-white">
+<p class="font-headline-md text-headline-md">Dr. Sudha Gupta</p>
+<p class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Dean of Student's Affairs</p>
+</div>
+</div>
+<div class="w-full md:w-7/12">
+<span class="text-primary font-bold tracking-widest uppercase text-label-sm mb-4 block">Student Welfare</span>
+<h2 class="font-headline-lg text-headline-lg mb-6">Nurturing a Collaborative Community</h2>
+<div class="space-y-4 font-body-lg text-body-lg text-secondary leading-relaxed">
+<p>“Student well-being and active engagement are the cornerstones of a thriving campus. The Council serves as the bridge that ensures every student’s voice is heard and every talent is nurtured.”</p>
+<p>We take pride in the diverse range of activities that KJSSE hosts annually. From technical symposia to sports extravaganzas, these initiatives are designed to challenge our students and prepare them for the global stage.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant">
+<button class="border border-primary text-primary px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/5 transition-all active:scale-95">Connect with Student Affairs</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Flagship Events Highlights - Asymmetric Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center">Flagship Event Highlights</h2>
+<p class="font-body-md text-body-md text-secondary text-center mt-2">A legacy of excellence and celebration at KJSSE.</p>
+</div>
+<div class="bento-grid">
+<!-- Abhiyantriki -->
+<div class="md:col-span-8 bg-white rounded-lg border border-outline-variant overflow-hidden group hover:shadow-xl transition-all duration-500">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-energy technical festival scene at KJSSE titled Abhiyantriki. Students are gathered around a complex robotics competition arena with glowing neon lights and high-tech displays. The atmosphere is intense and innovative, with a crowd in the background and modern minimalist university branding visible on banners." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiqpMOqnaqtm5p-1QibwGuB-5vVS5ASAnokRRihuWf5BDRuCiejLvuChyVZso0C2oeJC0YWmJ6VrsyHYRYdkmAr_o-QpO4LJ-stLkqpqqaoogfi8Tk_n3B9fTbhvGID8Q_mksv6XJ7x1qRXSKT7pHUwZrxTfwAL8bAbEzghpCrFN9MeHcoDlcFYDQq6KyzItHNfQobSIvvQW17f6YDCkZGFGw1MxJvGZabgBe3fJllOI2tDAn6Tet4">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-lg text-headline-lg">Abhiyantriki</h3>
+<p class="font-body-md text-body-md opacity-90 max-w-xl">Mumbai's premier technical festival featuring 50+ events, international workshops, and 15,000+ annual footfall.</p>
+<div class="mt-4 flex gap-6 border-t border-white/20 pt-4">
+<div><span class="block font-bold text-2xl">50+</span><span class="text-xs uppercase opacity-70">Events</span></div>
+<div><span class="block font-bold text-2xl">15k+</span><span class="text-xs uppercase opacity-70">Attendees</span></div>
+<div><span class="block font-bold text-2xl">100+</span><span class="text-xs uppercase opacity-70">College Tie-ups</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Symphony -->
+<div class="md:col-span-4 bg-white rounded-lg border border-outline-variant overflow-hidden group hover:shadow-xl transition-all duration-500">
+<div class="relative h-full min-h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant cultural festival concert night at KJSSE named Symphony. A famous artist is performing on a large stage under dramatic purple and maroon lighting. The audience has their hands raised in a massive outdoor campus setting, creating a high-energy celebratory mood with professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1X5CpIc76NrBe0yYlfhwPc4R2nVNN3uoxjgGNQFCs2NphMEeB92VMaZXN9flkd0wl2eS7gsH1UdTifnBSPD6LqIXrLDxTng0NjtT1Um8D-g04nNGRZhqQHUeq8lKgtSthDkXgZF6m972mjgkImpOPZBeVJ2vISlvDQZ1xOs4Ef5TSUbhUtuFzqoE5nuy-2t6fUAXUuh20l0ZQH701MX10emw41n0-8DKgWnMo_V5jDqdtGKkPgjHl">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-md text-headline-md">Symphony</h3>
+<p class="font-body-md text-body-md opacity-90">The soul of KJSSE. Three days of music, dance, art, and unforgettable pro-nights.</p>
+<div class="mt-4 font-label-sm text-label-sm border-t border-white/20 pt-4">
+<p>3 DAYS OF CULTURAL BLISS</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Skream -->
+<div class="md:col-span-12 bg-white rounded-lg border border-outline-variant overflow-hidden group hover:shadow-xl transition-all duration-500">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<span class="text-primary font-bold text-label-sm mb-2">SPORTS EXTRAVAGANZA</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Skream</h3>
+<p class="font-body-md text-body-md text-secondary mb-6 leading-relaxed">The largest inter-collegiate sports festival in Maharashtra. KJSSE becomes a battleground for athletes competing across 14 different sporting categories, from football to chess.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container rounded border border-outline-variant">
+<p class="font-headline-md text-primary">14+</p>
+<p class="text-xs uppercase text-secondary">Sports Categories</p>
+</div>
+<div class="p-4 bg-surface-container rounded border border-outline-variant">
+<p class="font-headline-md text-primary">5k+</p>
+<p class="text-xs uppercase text-secondary">Participating Athletes</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 min-h-[300px]">
+<img class="w-full h-full object-cover" data-alt="A dynamic action shot of a football match during Skream sports festival at KJSSE. An athlete in a red and white jersey is sprinting across a lush green field under bright stadium floodlights. The photo captures movement and competition, with the modern KJSSE campus architecture visible in the far background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjAsBCbfA7BMh5g86nIS3oCx2JNFbNugTfZC2pzNaBlrnGcHccQrAqGKiQD84Pz8JY6f1qTa81NCWBWyJKVy35K1Kt_bQARAKcPTp6IFrMRSX4d1ZA22JEQuvVcvBlhMK1OFyhp3JQerULhRmiBdMQGrxNLB4FtWtwebEBX_I1xVr4Z5Kfxl2SI4COq807LuyMgEd-BhO2wPgPzYB7mb2sjNyCLN6wExhO-xydwi44eQmfGovcZK5g">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews from Others -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Reviews from Others</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl mx-auto mt-2">Hear what our faculty and students have to say about the impact of the Student Council.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Faculty Testimonial -->
+<div class="p-stack-md bg-white border border-outline-variant rounded-lg relative">
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary/10 text-6xl">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Dr. Arati Phadke</p>
+<p class="font-label-sm text-label-sm text-secondary">Senior Faculty Advisor</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-secondary italic">"The leadership and coordination displayed by the Council in managing Abhiyantriki last year was nothing short of professional. They handle complex logistics with ease."</p>
+</div>
+<!-- Student Testimonial -->
+<div class="p-stack-md bg-white border-t-4 border-primary border-l border-r border-b border-outline-variant rounded-lg relative shadow-sm">
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary/10 text-6xl">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Rahul Mehta</p>
+<p class="font-label-sm text-label-sm text-secondary">Final Year Student</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-secondary italic">"Being part of the Council events committee helped me develop soft skills I couldn't learn in class. KJSSE provides the perfect platform for self-growth."</p>
+</div>
+<!-- Alumni Testimonial -->
+<div class="p-stack-md bg-white border border-outline-variant rounded-lg relative">
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary/10 text-6xl">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Priya Sharma</p>
+<p class="font-label-sm text-label-sm text-secondary">Alumni, Batch of '22</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-secondary italic">"The Council fests are my fondest memories of KJSSE. The networking opportunities provided during Symphony were instrumental in my career journey."</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-fixed dark:bg-tertiary-container border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md text-on-secondary-fixed font-bold mb-4 block">KJSSE</span>
+<p class="text-on-secondary-fixed opacity-70 font-body-md">Empowering student leadership through innovation and academic excellence since its inception.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-secondary-fixed uppercase tracking-widest mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-secondary hover:text-primary transition-all font-body-md" href="events.html">Events Calendar</a></li>
+<li><a class="text-secondary hover:text-primary transition-all font-body-md" href="team.html">The Council Team</a></li>
+<li><a class="text-secondary hover:text-primary transition-all font-body-md" href="#">Official Website</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-secondary-fixed uppercase tracking-widest mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-secondary hover:text-primary transition-all font-body-md" href="#">Grievance Portal</a></li>
+<li><a class="text-secondary hover:text-primary transition-all font-body-md" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-secondary-fixed uppercase tracking-widest mb-4">Connect</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">mail</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">groups</span>
+</div>
+<p class="mt-4 text-on-secondary-fixed opacity-70 text-xs">Vidyavihar, Mumbai, Maharashtra 400077</p>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 text-center">
+<p class="font-body-md text-body-md text-on-secondary-fixed opacity-50">© 2024 KJSCE Students' Council. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Interactive Scripts -->
+<script>
+        // Simple intersection observer for reveal effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Hover scale interaction for bento cards
+        document.querySelectorAll('.bento-grid > div').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.classList.add('scale-95');
+            });
+            card.addEventListener('mouseup', () => {
+                card.classList.remove('scale-95');
+            });
+        });
+    </script>
+<script src="js/main.js"></script>
+</body></html>

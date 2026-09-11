@@ -1,0 +1,502 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Our Team | KJSCE Student Council</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ffb4ab",
+                        "tertiary": "#2f2f2f",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5f5e5c",
+                        "on-primary-container": "#ff968c",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e4e2e2",
+                        "inverse-primary": "#ffb4ab",
+                        "surface-variant": "#e4e2e2",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-container": "#8a1515",
+                        "outline": "#8c716d",
+                        "on-secondary-container": "#636260",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e9e8e7",
+                        "on-surface": "#1b1c1c",
+                        "background": "#fbf9f8",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#8c1716",
+                        "primary": "#660006",
+                        "surface-bright": "#fbf9f8",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed": "#410002",
+                        "on-surface-variant": "#59413e",
+                        "on-tertiary-container": "#b5b3b2",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#474745",
+                        "outline-variant": "#e0bfbb",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#e5e2df",
+                        "inverse-surface": "#303031",
+                        "surface-container": "#efeded",
+                        "on-secondary-fixed": "#1c1c1a",
+                        "on-background": "#1b1c1c",
+                        "surface-tint": "#ae302b",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed": "#ffdad6",
+                        "surface": "#fbf9f8",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-container": "#464545",
+                        "secondary-container": "#e2dfdc",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed-dim": "#c8c6c3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-md": "32px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "stack-sm": "16px",
+                        "stack-lg": "64px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Work Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Work Sans"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Work Sans"],
+                        "headline-md": ["Work Sans"],
+                        "label-sm": ["Work Sans"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #e0bfbb 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-primary">
+<header class="bg-surface-container-lowest sticky top-0 z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button aria-expanded="false" aria-label="Toggle menu" class="text-primary text-2xl md:hidden" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="flex items-center gap-4 h-12" href="index.html">
+<img alt="Somaiya Trust" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdyt7lGSf1Hc5gHRGENhABvnILXaGOkRzpWUVxqFlAvnIJ8rZRW6Hxg7yDPd57_ogRQQ1caXjnDz0Lf4yy8jWmMj2dcZoTPwTF0Euc33oSG8A057rNkHtoLN2YhleUZB3BFqambsZDUqSlpGQfJfYwhVZv4pdNU2TNqOSHa_WljfW3LDFfGJjc_JMO7yVrsYqY0hrQwmPBpxso7vKxv4ykp8GlifHKrrr6HQoEnKDiWGCC_1Xu0mbiaf620u-_E1z4lg">
+<img alt="KJSSE" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5YVcG3mrXQ_KuI4d-MaYC3pViQFu00OOaOiGToz5tzdH954kc_yBhlDFaoAD1qBY54PCoVWJ2XyPH0nhSnyz0BjvSw9KistL9YCRhNnZZHFV-dYwNymSFoYJzTdO4kLM2yYQf7w5kJP70ZthbB6OwuKD_sc9NzDLVQZOPe4a9nLuIFUqc2Xlaz8ruSowzDk6t7hKrKEwbk5NCmf81sB3MJUHLViXAs6qlsYkftkm2wgOe6Iy23vKuyambq-57ZaJh5A">
+<img alt="KJSSE Council" class="h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI1AygvQQZxIg0kBUCzqcMqEaSxtuqAULVOw0dz53_VMaZ5ICXxUA0eU_0MHdiIeUnnRtH5-vH1bLGXRnRSSpFAvgafa9k_K0Cdi0ESQIJ3YzDmVy72__GM8jbTRuhkffpFSNd0YClh7sP4augVGcBWF78QoV3JVn1IV8obb-xDC00_63onFOkoZvRHpkATgj7Xh5ajYX8Pm2eksTwMxIl9OI-bLOAPgR16hNkN3V3rg3QUFedqwkPPqYa2p5bUrEhbA">
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-stack-md">
+<a class="text-secondary font-medium hover:text-primary transition-colors font-label-md text-label-md" href="index.html">Home</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors font-label-md text-label-md" href="events.html">Events</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="team.html">Our Team</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors font-label-md text-label-md" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-2xl hidden sm:inline-block">account_circle</span>
+</div>
+</div>
+<nav class="hidden md:hidden border-t border-outline-variant bg-surface-container-lowest px-margin-mobile py-2" id="mobile-menu">
+<a class="block font-label-md text-label-md text-secondary py-3 border-b border-outline-variant/50" href="index.html">Home</a>
+<a class="block font-label-md text-label-md text-secondary py-3 border-b border-outline-variant/50" href="events.html">Events</a>
+<a class="block font-label-md text-label-md text-primary py-3 border-b border-outline-variant/50" href="team.html">Our Team</a>
+<a class="block font-label-md text-label-md text-secondary py-3" href="about.html">About Us</a>
+</nav>
+</header>
+<main>
+<section class="relative bg-surface-bright py-stack-lg overflow-hidden border-b border-outline-variant">
+<div class="absolute inset-0 hero-pattern opacity-30"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col items-center text-center">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4">Dedicated Leadership</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-6">STUDENT COUNCIL MEMBERS</h2>
+<p class="max-w-2xl font-body-lg text-body-lg text-secondary">A diverse assembly of visionaries, leaders, and creators working in unison to enhance the student experience at KJSSE through excellence in academics, sports, and culture.</p>
+</div>
+</div>
+</section>
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Minds Behind KJSSE</h2>
+<div class="w-24 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Top 4 Team -->
+<div class="mb-16"><h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">The Team:</h3><div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-2xl mx-auto w-full relative"><div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<svg class="w-full h-full absolute inset-0" fill="none" preserveAspectRatio="none" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M200 100 C200 150, 300 150, 300 200 C300 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M200 100 C200 150, 300 150, 300 200 C300 250, 200 250, 200 300" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M200 100 C200 150, 300 150, 300 200 C300 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M200 100 C200 150, 300 150, 300 200 C300 250, 200 250, 200 300" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M200 100 C200 150, 300 150, 300 200 C300 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+<path d="M200 100 C200 150, 100 150, 100 200 C100 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M200 100 C200 150, 100 150, 100 200 C100 250, 200 250, 200 300" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M200 100 C200 150, 100 150, 100 200 C100 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M200 100 C200 150, 100 150, 100 200 C100 250, 200 250, 200 300" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M200 100 C200 150, 100 150, 100 200 C100 250, 200 250, 200 300" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div><div class="group text-center relative z-10 bg-surface p-2"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="General Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW_GOEfyXfHdl5nIUefQW4OOVeobEetmYf6oT5f29BSxiRKQiMgfdoa30FyRjCVjQ8ZxYCsblMKR5evwLe3_V8T1IV9DNQCZwf45zu6yHSzJIPPYcMxFWS9_NDOdIgY6nqo_kABOXP7APbd3gXyxyrjZRwv9knsJV88p8izz_ThWk1fhSKGoPWkPjY5FE4JaEu3SOPb2MU-uzd0tUpQX2-LPIJ1zdsLskLEUaN3qWbyN8wWZQxerYVE5bcuDweqqzq9Q"></div><h4 class="font-headline-md text-headline-md text-primary">Kaveen Shetty</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">General Secretary</p></div><div class="group text-center relative z-10 bg-surface p-2"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Joint General Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC91X5WZJJKww76zKHY3eoEnBS9v2ASFJaHCeohF-Wkj6laTsZ0EOt9442CksSvIfp0UwYDeZhyWB_FU7HueYbl2vs5n7dGj2dGkUAeRDh2ETFJXfAsd3q6s6D2Q7wLsjwdVd-0rUPIM5GhA8BNrjmREfZ37dexFGhP-3e7l_ZfRQHXDyZsXSfTguOleOtFuZ2oxIdGj-KFs-t-rdqGE9M9xWEIUpoaEJovYOUjonOTEo5a945aarnVPBHvrxiKmwfhkg"></div><h4 class="font-headline-md text-headline-md text-primary">Shreya Deshmukh</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Treasurer</p></div><div class="group text-center relative z-10 bg-surface p-2"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Joint General Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3zZT1jSAEKQ91GZqHO6P7sfbVEu1tk4seWNnGicZm8mbmwDT-8HcijWfLHufT7WhoqrBLZ98KZzTMqZzxY-V5q6J5VV6N8mj5G8zwApKfCon33NA2dYD1rayUknASen5WfysjsMWplR7Um-nMn4KRPxxn7840Nutxd0uG0NQjRb-7QdtKlBZCAYp3bqgRacFahZ2iQOC6eapwJWEE1t8iMZYHY0hggSrqht7tkkKS8aGVvUDHuG22JbdEc_UkuFuzsQ"></div><h4 class="font-headline-md text-headline-md text-primary">Adit Shetty</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint General Secretary</p></div><div class="group text-center relative z-10 bg-surface p-2"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Treasurer" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDlhzU_NWg3gsxVLu0n1OIBQtOvtmj68s0YdovLQMagHdex41socmvQ-7ZVNBoyDHLawncOfngrUSEOvYqhrAJvODXpaNqkMF0TzglxBZAir1vgsdlAS_5dtVOIi3YFAqVK7YZL5yZZvahaF0VLz6YSr8aiEKJBi78uKVEhJV-nI93d7xZuHJ9J5I9VRKl04Ft0-li2slzd5AM94aabASXB_U5AJLUDz_VzJqwgAVpsg2xh5cwv7zQ7RyCx69TIcAXWw"></div><h4 class="font-headline-md text-headline-md text-primary">Ameya Goudar</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint General Secretary</p></div></div></div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Operations Team -->
+<div class="mb-16"><h5 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Operations Head</h5><div class="flex justify-center w-full"><div class="group text-center w-full max-w-[280px]"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Operations Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdgM2DSlnlBIP6TpchLAJv1h__W569W3IEutFSXZlvJ6p87MIRxeaO0PhLZj5wrXoBrVhT2K7vlbQQ16JGojZtV1lnx5xlm2v7S64bys3a_1rQuzySaJQIU1wPzZQYhgV1v_S1jhEWyoCytQIGgAbmn7sEghOCOF66droD8T2ZpuJjle-EiclMW6zcPPmXdpUpdHRxOQD3Eae8OOLH1C5tohibCLNGXyu9sgyNmDKofa90hwaCOBkCaZRdRUpg7Rwzyw"></div><h4 class="font-headline-md text-headline-md text-primary">Arnav Samant</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Operations Head</p></div></div></div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Public Relations -->
+<div class="mb-16">
+<h5 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Public Relations</h5>
+<div class="flex flex-col items-center mb-8">
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Public Relations Officer" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJIYE9tU_i2gQf6JorgX2yVP1b1XhCQOD8m3q-toduTIqeceqpJozjsDm9wvV5xFLao861hQg5k0jpC74HCQtvhYCTJxZcuR_iLH-pfUhwpTGh0c7WcBuG838HgDiJ-lEufpeymO21TryJQaFu0do-B2mLgIKnqpJWRSbWVfgPXB1dDFKA0Qmz-DZUeGdTwfif8kqgXsI1AvKPmiOhD5zLB3XKhqDwXEtLra8bPwT-LMLILu5s2sA5f5bX26OZ1fEHxw">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Anish Wagh</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Public Relations Officer</p>
+</div>
+<svg class="w-full h-32 mt-4" fill="none" preserveAspectRatio="none" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-2xl mx-auto w-full">
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint PRO" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRNC92kz535w-nt5iFeAqjtn4-bF1NWDT1ppmSZycR-nUhAlaXpUXy_LpYVp9-KwoyI4g04STy2az68xrrf9R9JpvQrpjkG5hDFWBl3qf5pjLr0SU-W-KsZxFZ6gbX9AHUmdK1todh1mmUKD4XStDHqfKyhw3dnKxl_RplnAzXcUSb_MsuF_bCp1lYN9rtG-lVy6moMSei7jPEblQbnmNg5wpwceHUoJb2Ou0d8PciP2DmjH0WERnKwnZa8vK28vIhSQ">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Niharika Sharma</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Public Relations Officer</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint PRO" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf5cP5yP-_99iZlyZotMpg18WszGppu7qRfo8yU77j5yTnpeAFL8_DZejTo1TZElNoDjBC8C30rEWgIlhBXfZDj8yOcy0oS2YDeiwYGQzh1oe3t7SnINEhcMWrZUEZ7qmZPxdZGBuogbHLD6EQNQbouv06MIcA7Tue7F7GznaW4Z2vK6Ia1yfffLyhII72sCtnR3auetRy9Zti2Tlwi05D0SdtEIrM5BSzP4bEVnDoPHlxuCdvyKhxpE3xpUvCWBTecg">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Aayush Nair</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Public Relations Officer</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Cultural Team -->
+<div class="mb-16">
+<h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Cultural Team</h3>
+<div class="flex flex-col items-center mb-8">
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Cultural Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm0fT7dQoeqhe2b85749FBBs5Fb0Ayrax4okhXfwexJ6ogX9HaMv4R5ke7FD1oqZAHXF0K5U4yLRXyvOu1vquVwKb1gq1GOCe-TH5cqY2yJc8PnCMczqQD9HZkPF4NuPSyZduJE5hgbRA-nA2Z_q_o8B2VWEEpO7TSo_UZRuL9TQV1ANl8HvD8iP5PGnbPAaxtLKc883J4wgkC_W_52c8a90fbSB_aEv7N4t6uAJqDY3GwYhsj2n1hthb2FV_rJK7jnw">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Anam Chauhan</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Cultural Secretary</p>
+</div>
+<svg class="w-full h-32 mt-4" fill="none" preserveAspectRatio="none" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M200 0 C200 30, 250 30, 250 60 C250 90, 200 90, 200 100 L200 105 C200 115, 180 120, 100 120 M200 105 C200 115, 220 120, 300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-2xl mx-auto w-full">
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Cultural Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhCa_dbXkLGoXYOfEMpL9wv-K0hsaDtPeEI-q-WS-Ps9lwqo9wUj-r-iZSNvvQzdsdm5uFOc1I8aLzKtT_wN-eNwYkzWuNUv7QRxJB7CgB88MVU-CWeKpELZN_jSNfS0b3nK_FncdZ8fLuGIn2uUjXSU7eaSuHJVom6nZAQ48JFIhgmrEWB-By1WhQY48TfZLAVAVteCbZ9C2lpaqcy--oqXGFP5UE0SH8f_o9CcHf9Ws_0thKb5vt5UpJTUH9nXEhFg">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Jaiveer Panchal</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Cultural Secretary</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Cultural Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQvB3_Y3El8jw99bGV35WvKMMUibQhBZhV_2egzUEu2kCA7nFyrkEvtV8qyO-w6X_SkTnkShOMRWBxMWL9aNeK8KMQy_j7hgl1yj-9YJ3GbDFqVA6BvlhT654_i4SFlN0HwUqMuctkU09jHUKiA3cJsNM0nTYQSBoE0enXyTC6QZ9-FyAiiCWidPpg9KhMMsCGn3AdGPSRfcQogPbRsFPA3DP-D-ZGkKcGWLFkEJlCH058ejAXJcIPwruAbissXo-Wow">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Sneha Nair</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Cultural Secretary</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Creative Team -->
+<div class="mb-16">
+<h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Creative Team</h3>
+<div class="flex flex-col items-center mb-8">
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Creative Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1USE7pX17a6Z2zV9lGVIHIuOevN7rhHvKMqj-4f6EeEG8eX_QNjzd5J3A5QYr70ZExcy8LdsF-BsIwbBI9WngDswyOzyP2KOFWCqq6HosD4C1I60ZDzCZ5HDLfIOKyiBZgRmIJBcBUY-GajFx15U7_1vUc6BEs7T3wC_Pqmheu07KOcWTEQ9-4TVC0x6Zdnyh0JKMV3iJj04rXlW2_BPXkiXw34CXRbm8u7la2gyUmZaAtiW3X6o-eddzQKu1TK2AFQ">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Yoosha Abbas</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Creative Head</p>
+</div>
+<svg class="w-full h-32 mt-4" fill="none" preserveAspectRatio="none" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter w-full mb-12">
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Creative Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2G0sLfoRS5y5_OQw3XNzmEREDeIjQ2xdVWAM3RB-1IvLiR0mRIAHicKpGZjMxtc1urRHI4uYtO2XvPGXk0z1k9lmEPCqKLM7_k0DK1jAbZpQfV5HzgdoCNi2qIQHl4zI8o_PzlEG-Ba6S18g5lJhEIK_6xrdqwacYES4-0K1ybu17ruGVKWHMCPRQSD5KRJ6kwHfuNSRRMlFc-jwB21bXPPmgHjBNlGRp0WbXK_FjeJw6XMYB2k3_JSgwASnLfp08w">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Siddhant Shevkar</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Creative Head</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Creative Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjRMFRIHGhLyySE29qOT4z8uzpvfQdZqCcbDi5S-vodRYPTXdhvu5kIYw7wsteVpKRvwCiLvSnBdPn_r8cf8un2HmyAmfSoYsgT7jPJuAdL5H-kovRqpmyMRdjAoPHbzbsCYJoavM4EfqZaJ8tlJc9t4gqQJzQFwMfIWWRF035-5uvrFg4lmsfzGw25GJ4ql4WN36wZFvU2JUrf_3WaBG37eE8BDlCNYikw-dAMKp5hZUdoXC-zFX1vyOdFRVLzL4ygA">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Shruti Pramoth</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Creative Head</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Creative Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPpoSsnI2a5yw9s9qx2lqG_dwwm6aOcbMnHhS3iFrjgDKL92rGDupT0N393rrK4Zx-5QT-7j2AaXcnbTtlJ7UOlwQbskVQJphXGfrGyxZ6TjkURdIa23vOFcqN0mZa_phv-yWorDTV_ZzDJEuBqDt0iI8O28XqHdQFTgkE9_ZUXUuEYSXZLI_luU8a3o4BF5loZeGItJQbk4t1vgR-72jteFqygia1_HoPD_gwcQzSO5HDlm6ExAUKAyBaAlyUPRYTsg">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Keshav Shreshtha</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Creative Head</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div><div class="mb-16"><h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Marketing Team</h3><div class="flex flex-col items-center mb-8">
+<svg class="w-full h-12" fill="none" viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 0V30M300 15C300 25 280 30 100 30M300 15C300 25 320 30 500 30" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M300 0V30M300 15C300 25 280 30 100 30M300 15C300 25 320 30 500 30" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M300 0V30M300 15C300 25 280 30 100 30M300 15C300 25 320 30 500 30" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M300 0V30M300 15C300 25 280 30 100 30M300 15C300 25 320 30 500 30" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M300 0V30M300 15C300 25 280 30 100 30M300 15C300 25 320 30 500 30" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div><div class="grid grid-cols-1 md:grid-cols-3 gap-gutter w-full"><div class="group text-center"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Joint Marketing Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBikv0i7MxwOoq7KCKd00wlyn5G3uTzA1lb3JOmyhulhCloCRFo3-EA41Hkreh31ku__TX_KC0aHSSEX8L05Bkwu1XDgmT4i_iZYX09BcDI2dWC0AABl1t7nt6D4M3OkZXW7P3Gf8wLVZIbf-hWLIvA-cH1GsHyRQnuxI84aVUGyNvZv2-LNuCga6nS6W1G2xA6ZDQUaFyX_2Z_j2DR1LtwFaGsug_Hp9UYuCg7FKJsusghqMd5LgDLsHQAHtCJLPn_Mg"></div><h4 class="font-headline-md text-headline-md text-primary">Shllok Tahillani</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Marketing Secretary</p></div><div class="group text-center"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Joint Marketing Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi48Sx_EPe3F6EHBa5oY4swQ4R8Bf-QJji07dO7l1T7EZy1yptg2gNJzjcYNmq7mohuZfdEGgHuLAprhLys8zhoKZ4Lf8Wa86zraxMxIkOidLMFaT1Pkojt7LK7Oh1NHwSQZZRzM_tNF1Ux9JcyFT6wxx0qjtTQftTc9fJDSZpkgcDYQ_1W2lRVlaBTWww53bzSajuxClETPfAbGSkJXxA-k8xkD_oEuz1kdvD_L5r8HkysVUXNRIeRFORBWT1WxD6PQ"></div><h4 class="font-headline-md text-headline-md text-primary">Kalpita Roy</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Marketing Secretary</p></div><div class="group text-center"><div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors"><img alt="Joint Marketing Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbeYOHrlM1nXWEuTIcm2u5-_qK8j89uNcEIM6KPIqIyCv_9vUyfVkAnn9fIq7HZKoIvdYxwuS4HV0YRMYrbWn_XKcjR6Jc_yixwTR39H7ZQjw5LKqjCLB1Q276qlaf59xxROqcz_loYwLAxk9a7zzb_eJGI6H_hxzel-m7yd9dPURks6mdpqLmDQE6y7Y0pmESFx8XhuwXp6-M4is6fk9MkC-KhEVQd7XSdWxbXX6fKzRmP6O__q0wn52R_a9faP9Rog"></div><h4 class="font-headline-md text-headline-md text-primary">Manya Sharma</h4><p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Marketing Secretary</p></div></div></div><div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Sports Team -->
+<div class="mb-16">
+<h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Sports Team</h3>
+<div class="flex flex-col items-center mb-8">
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Sports Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpp6RRhBxWwnLDTxGWsyi0QeooppjGd8iIfk88ITw8kuPHpFdYkrXLaQJ8RP7GnT026v8AnNylJY7X_o_oDaxxBGmoJ7_g5sMZffjfQi_77FlaaQitgtFsRMGNkw6sz49b7NWQdNEA2wmiA83Ysov6V5oB-qUN-T3wYTEr7tmGMenI-92otMLL2hRRBksGNCR6QKrsE3f5e27R8jtE5x0bFX-sX9QbYYnUtSO15hq8R_WEhLc-6GPTqgGv4sphZXjlgg">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Aditya Mahajan</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Sports Secretary</p>
+</div>
+<svg class="w-full h-32 mt-4" fill="none" preserveAspectRatio="none" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter w-full">
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Sports Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH5lCmuvL5gzaBH5jteNsklF2lHAlNxGTJkPH0esjAgwJiF9oHypoFg0S7_Xti6tDAMiH2fE6L5JkmziQHE3_VPO6uq-h1c-hVIkXJ01FBF5p2akCSbjcqi4UoLC-Pghro0Y6JpN5Mc-I--21vIRnupCeBVCh9nXgwwdUNerqNwezsoa_eFFochnKLXtiA4IvK60I8vw4Yz-jbmJuxnJy4HqwqemyZUw245cmr67QigZLxbmFHa_7l9erF8vYXsklcPA">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Darshan Jimmulia</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Sports Secretary</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Sports Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDizk7UtZ7bDAymCr-TGaYNuhrFNenEvJJUJYdqHWKpMusLN8OOjHkraUaq8IHlNOtZdzZf-cBwi2Xq4PXMalx5IPUaznr9utN7RFF6J9-A1ApGYv4GeT_LeUKJ2Au3m2Y5gT_MpjJXGbh32K_VoaMf0ID2dhHj2H8tcVDesSrJUa7FE3R0-4wCmjUgWs5quQK_vYcivpOGILTvHXcbbpuxMqhTOg1npl0GEtetvahMhG28HFj9tU3DZtWACWlcPFHhfQ">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Shreyansh Shetty</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Sports Secretary</p>
+</div>
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<!-- Placeholder for 3rd Joint Sports Secretary, repeating image for now as it was missing from original -->
+<img alt="Joint Sports Secretary" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIouqJMwKrs-2vR1adzjwIglB82QRJwYLiX03rl5OJQnX0ZWoUqLK4mu8FuQegEQHm-O-cuFTvC5qFF1crhAB2yIX1QzZ1VS1lfkbQHnuLqeCJWl6CWg6HIyRx-_J0x3js8IH7RdziXpOfvtq_otfuXy-tiaVGHKSDC9ed7tqk-qD--SihmQuRnMDJLWEAo1EDz5Ff6AKL_v2oQTBjTBdxcCXjaoeUJY3q8vgdl8TqD7_QP7rpkt2xzK2evv0VbFX9U7VB3uf6tEI">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Varun Bhosle</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Sports Secretary</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Social and Security Team -->
+<div class="mb-16">
+<h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Social and Security Team</h3>
+<div class="flex flex-col items-center mb-8">
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Social and Security Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd9jds2JKdUJwFMdEPrFvoFC-xx4NLEuOU3KRGyRknU4GTvRzV13w41y4HVYosjQ0-QDdUMW1Tc7oBwR_IzPCxTGaD4lWuWdS2iYHp9tEaBhU2ZDYU3zK5UQ35NTnp-dMmkAie_FlKL5uIQECeg2oJn1c62WhJFBeKOj1XbxyEhBuoGhQELWE0Mnnl2r-TsPOo6H8xF6W1EAip0HjB103cMnOQlnbBRa4MpEqQlFghaZovKBLzeoFjLPpp3E-Kw-lkPtpWV7UkmtY">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Prathamesh Patil</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Social and Security Head</p>
+</div>
+<svg class="w-full h-32 mt-4" fill="none" preserveAspectRatio="none" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="10"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="8"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="6"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#fbf9f8" stroke-linecap="round" stroke-width="4"></path>
+<path d="M300 0 C300 30, 350 30, 350 60 C350 90, 300 90, 300 100 L300 105 C300 115, 280 120, 100 120 M300 105 C300 115, 320 120, 500 120 M300 105 L300 120" stroke="#8a1515" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter w-full">
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Joint Social and Security Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIkpcaX1_BlpOWfSx0U-svj7hVR9rOowJVz77UrrdEPTfbRlEFGsrPs1d30sNf1WiXYFIbfQE0h3HquJxtOwSHDwJoGQ-P5Uf0DMQg-0VC1wRSMCy1iG4uUSWtSgKWQt2HCbIURKOX32nOkYpf4PHfBmdlzXDUeEkCr_XKXFNt3pgT-GnhW57wCFOWdCj08lvlNaLaAFtgd27PAIy1lKtNWvnCJP2JfoczOqhZ_FkWMD6fAoBdlvfAkzYf1t465XXToXW6kI6nf_A">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Reyansh Chavan</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Social and Security Head</p>
+</div>
+
+<div class="group text-center">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<!-- Placeholder for 3rd Joint Social & Security, repeating image for now -->
+<img alt="Joint Social and Security Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXri2Z1yNwYmC3NYK0wjLy_Qs1_6bX9kDMwTYvOvfEBa74Oxs-HKZ3NQFmP7mMNjm8rLc6C1E9rqqrKJLPITTwSEwsOeAmSe93Trbl-IAogixBf1lnx4tDkMmytynhF3xKKXbMnISYpSNHsvlPOfLYrmvD8HMlrgOFObTuf_PTV_BMYPD8nR8AjyCQ6NsEJewBHDRJU6LAtwAg4U7hSHO0CWcVc_lTHDT7jAN3OQWznIlF5GPtPSbM8zY3G0I4llgwQ">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Atharva Ganesyan</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Joint Social and Security Head</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Literary Team -->
+<div class="mb-16">
+<h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Literary Team</h3>
+<div class="flex flex-col items-center">
+<div class="group text-center w-full max-w-[280px] mb-8">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Literary Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwBF_QeWMq3cNRzAvX7rrFqYh5QtE_xvIqCVyJ9kjBQIzjMl4jGh1ZZvH8nJMjGhB9pQg8QGrYZjYMU8nBRAZjIfL_Ob7ZvOlq_nblpnBFrT-VdF86ewxkJmcAO6_HFTtWZF8jFVYF4YtsO852pPnE1C8Le1KnX0UOItBIkb16OBhBwtQVewYOYcnvOVQ1wUq9AfpIsyt8MO7rMf9jbxhvctbBI8dU7IPvA_DpTS17vEQRurR4en739DKGb2pnaD7lbaZTTMh3rUE">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Ananya Bhagwat</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Literary Head</p>
+</div>
+<div class="flex h-8 w-3 justify-between mb-8">
+<div class="w-px h-full bg-[#8a1515]"></div>
+<div class="w-px h-full bg-[#8a1515]"></div>
+<div class="w-px h-full bg-[#8a1515]"></div>
+</div>
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<!-- Placeholder for Jt Literary Head -->
+<img alt="Jt. Literary Head" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwBF_QeWMq3cNRzAvX7rrFqYh5QtE_xvIqCVyJ9kjBQIzjMl4jGh1ZZvH8nJMjGhB9pQg8QGrYZjYMU8nBRAZjIfL_Ob7ZvOlq_nblpnBFrT-VdF86ewxkJmcAO6_HFTtWZF8jFVYF4YtsO852pPnE1C8Le1KnX0UOItBIkb16OBhBwtQVewYOYcnvOVQ1wUq9AfpIsyt8MO7rMf9jbxhvctbBI8dU7IPvA_DpTS17vEQRurR4en739DKGb2pnaD7lbaZTTMh3rUE">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Soham Kalsekar</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Jt. Literary Head</p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-outline-variant mb-16"></div>
+<!-- Ladies Representative -->
+<div class="mb-16 flex flex-col items-center"><h3 class="text-primary border-b border-outline-variant pb-2 mb-8 inline-block font-display-lg text-display-lg">Ladies Representative</h3>
+<div class="group text-center w-full max-w-[280px]">
+<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+<img alt="Ladies Representative" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgzqc-fObmIISlxG9vLlfgpFN4SBfGGQ61IxLBNYVNdqhY2sbxNsNEM9r-MSh8M2VjbSYQnVQXzLWp4jXMkf_xeLiMYLw6XP5N4MzWavfizvu8FybUYAdrUjV4hQpv684gjmtbbMRLoNtU6bPhMt58qXRXFhhfdsadxhTUudom4QJOAxt1USnF0TxULkEPz_OkNWZsT6OYDYd9Lu9agLQniTWRhgAHAxa0nnGSBLnqUrn9ADEu9-kOsxFyLb7Y5ruIug">
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Shrija Gawand</h4>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mt-1">Ladies Representative</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-stack-lg bg-primary text-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center">
+<h3 class="font-headline-lg text-headline-lg mb-4">Be Part of the Journey</h3>
+<p class="font-body-md text-body-md opacity-90 mb-8 max-w-xl">Stay updated with the latest council initiatives, event registrations, and campus news delivered directly to your inbox.</p>
+<div class="flex w-full max-w-md gap-4">
+<input class="flex-1 bg-white/10 border border-white/20 rounded px-4 py-3 text-white placeholder:text-white/60 focus:outline-none focus:border-white transition-colors" placeholder="Email Address" type="email">
+<button class="bg-white text-primary font-label-md text-label-md px-8 py-3 rounded hover:bg-surface-container-highest transition-colors">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-secondary-fixed text-on-secondary-fixed border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-4">
+<h4 class="font-headline-md text-headline-md text-on-secondary-fixed font-bold">KJSSE SC</h4>
+<p class="font-body-md text-body-md opacity-80">K. J. Somaiya College of Engineering, Vidyavihar, Mumbai.</p>
+<div class="flex gap-4 pt-2">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-md text-label-md uppercase tracking-wider text-primary">Quick Links</h5>
+<ul class="space-y-2 font-body-md text-body-md">
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="events.html">Events Calendar</a></li>
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="team.html">The Council Team</a></li>
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="#">Grievance Portal</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-md text-label-md uppercase tracking-wider text-primary">Resources</h5>
+<ul class="space-y-2 font-body-md text-body-md">
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="#">Official Website</a></li>
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="#">Privacy Policy</a></li>
+<li class=""><a class="hover:text-primary hover:underline decoration-primary transition-all duration-200" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-md text-label-md uppercase tracking-wider text-primary">Location</h5>
+<div class="w-full h-32 bg-surface-container rounded-lg overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+<img class="w-full h-full object-cover" data-location="Vidyavihar Mumbai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4SvAPKwSjwd9ZE5MhgSPh1GWRNi_zp7IL3Q8yHUsSWaMXLnodZ6OsizDkHY7tl2OG3RVlE67Nv7M-FoPgZ2nWUFbsBn0Uf05dAFVWXVKxPniqfO3xk-q0BPGSNz6ookJ15U08aU0q8JTOmBYMwBKiV4YyAaLv6TugjuH3-1rCFX5O9awQ2Y-S4uFQVZjtOeteGuAsU5IUVAERrFB1cidKCKLFAJ8NRaKFTYO5azi-DFrhkKP80UeebxtsvgyJJ7Zsk2gLWKevJKQ">
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 text-center">
+<p class="font-body-md text-body-md opacity-60">© 2024 KJSSE Students' Council. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+    document.querySelectorAll('button, a').forEach(elem => {
+        elem.addEventListener('mousedown', () => {
+            elem.classList.add('scale-95', 'duration-150');
+        });
+        elem.addEventListener('mouseup', () => {
+            elem.classList.remove('scale-95');
+        });
+        elem.addEventListener('mouseleave', () => {
+            elem.classList.remove('scale-95');
+        });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+<script src="js/main.js"></script>
+</body></html>
